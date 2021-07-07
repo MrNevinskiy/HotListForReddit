@@ -2,7 +2,7 @@ package com.example.reddit_popular_list
 
 import android.app.Application
 import com.example.reddit_popular_list.di.appModule
-import com.example.reddit_popular_list.di.mainMenuFragmenttModule
+import com.example.reddit_popular_list.di.mainMenuFragmentModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 
@@ -14,7 +14,7 @@ class ApplicationRedditPopularList: Application() {
             androidContext(applicationContext)
             modules(listOf(
                 appModule,
-                mainMenuFragmenttModule
+                mainMenuFragmentModule
             ))
         }
     }

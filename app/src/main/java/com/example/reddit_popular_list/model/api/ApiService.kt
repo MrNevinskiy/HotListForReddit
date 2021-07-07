@@ -9,6 +9,7 @@ interface ApiService {
     @GET("{subreddit}/hot.json")
     suspend fun getHotFromReddit(
         @Path("subreddit") subreddit: String,
+        @Query("limit") limit: Int?,
         @Query("after") after: String?
     ): HotList
 }

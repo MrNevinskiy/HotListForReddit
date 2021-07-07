@@ -21,7 +21,7 @@ class PageSourceProvider(
         if (query.isEmpty()) {
             return LoadResult.Page(emptyList(), prevKey = null, nextKey = null)
         }
-        val response = api.getHotFromReddit(query, null)
+        val response = api.getHotFromReddit(query, 100,null)
         val body = checkNotNull(response.data.children.map { it.data })
         return LoadResult.Page(body, null, null)
     }
