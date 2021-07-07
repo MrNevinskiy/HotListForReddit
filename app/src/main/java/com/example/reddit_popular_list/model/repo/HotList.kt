@@ -5,4 +5,6 @@ import com.google.gson.annotations.SerializedName
 data class HotList(
     @SerializedName("data")
     val `data`: Data,
+    @SerializedName("kind")
+    val kind: String
 )

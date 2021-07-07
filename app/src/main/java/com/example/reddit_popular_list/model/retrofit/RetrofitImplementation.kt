@@ -36,6 +36,6 @@ class RetrofitImplementation {
     }
 
     companion object {
-        private const val BASE_URL_LOCATIONS = "https://www.reddit.com/r/aww/"
+        private const val BASE_URL_LOCATIONS = "https://www.reddit.com/r/"
     }
 }
